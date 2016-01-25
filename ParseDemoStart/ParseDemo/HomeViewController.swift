@@ -16,6 +16,10 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,6 +28,14 @@ class HomeViewController: UIViewController {
     }
     
 
+   override func viewWillAppear(animated: Bool) {
+        if (PFUser.currentUser() == nil) {
+                let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("Login")
+                self.presentViewController(viewController, animated: true, completion: nil)
+        
+        }
+    }
+    
     /*
     // MARK: - Navigation
 

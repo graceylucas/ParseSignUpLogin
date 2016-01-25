@@ -183,6 +183,9 @@
                                             <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="rMA-Qa-Dfn" kind="presentation" id="7HX-NK-BW0"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fpE-ed-7RH">
                                         <rect key="frame" x="75" y="259" width="121" height="33"/>
@@ -366,6 +369,11 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="UOz-tS-XVp" id="Yag-SV-GlB"/>
+                        <outlet property="passwordField" destination="Jcj-sR-Vlo" id="Bfw-Mv-vcO"/>
+                        <outlet property="usernameField" destination="4IT-7M-gza" id="raP-k7-m3H"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kNV-FU-MXv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
